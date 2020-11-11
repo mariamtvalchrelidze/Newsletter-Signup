@@ -54,7 +54,7 @@ app.post("/failure", function(req,res){
 app.post("/success", function(req,res){
   res.redirect("/");
 });
-app.listen(provess.env.Port || 3000, function(){
+app.listen(process.env.Port || 3000, function(){
   console.log("server is running on port 3000.");
 });
 // api key: ecfec261974a1b3188fa1de4e758dc7c-us2
